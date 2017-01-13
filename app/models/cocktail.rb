@@ -5,6 +5,6 @@ class Cocktail < ApplicationRecord
   has_many :ingredients, through: :doses
 
   # Needs a unique name
-  validates :name, uniqueness: true, presence: true, format: { maximum: 40 }
+  validates :name, uniqueness: true, presence: true, format: { maximum: 50 }
 
 end
