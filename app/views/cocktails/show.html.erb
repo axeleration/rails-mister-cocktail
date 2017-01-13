@@ -1,0 +1,15 @@
+<!-- Title of page -->
+<h1><%= @cocktail.name %></h1>
+
+<!-- Display list of ingredients and doses -->
+<ul>
+  <% @doses.each do |dose| %>
+    <li>
+      <%= dose.description %>
+      <%= dose.ingredient.name %>
+    </li>
+  <% end %>
+</ul>
+
+
+<%= link_to 'Back', cocktails_path  %>
